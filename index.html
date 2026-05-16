@@ -4,21 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora de Ferias 2026 - Calcule Quanto Voce Vai Receber</title>
-<meta name="description" content="Calculadora de ferias online gratis e atualizada 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000. Resultado em segundos.">
+<meta name="description" content="Calculadora de ferias online gratis 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000. Resultado imediato.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://calculadoradeferias.com.br/">
 <meta property="og:title" content="Calculadora de Ferias 2026 - Calcule Quanto Voce Vai Receber">
-<meta property="og:description" content="Calculadora de ferias online gratis e atualizada 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000.">
+<meta property="og:description" content="Calculadora de ferias online gratis 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://calculadoradeferias.com.br/">
 <meta property="og:image" content="https://calculadoradeferias.com.br/images/calculadora-ferias-og.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Calculadora de Ferias 2026 - Calcule Quanto Voce Vai Receber">
-<meta name="twitter:description" content="Calculadora de ferias online gratis e atualizada 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000.">
+<meta name="twitter:description" content="Calculadora de ferias online gratis 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root {
   --navy: #1B2A4A;
@@ -33,7 +37,7 @@
   --cream-dark: #F0EDE8;
   --text: #1E1E1E;
   --text-light: #5A5A5A;
-  --text-muted: #8A8A8A;
+  --text-muted: #706F6F;
   --border: #E2DED8;
   --white: #FFFFFF;
   --red: #C0392B;
@@ -56,8 +60,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img { max-width: 100%; height: auto; display: block; }
-a { color: var(--teal-dark); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: #087A76; text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--teal-dark); }
 .wrap { max-width: var(--wrap); margin: 0 auto; }
 
 /* ─── NAV ─── */
@@ -166,7 +170,7 @@ a:hover { text-decoration: underline; }
   font-family: var(--font-display); color: var(--white);
   font-size: 1.25rem; font-weight: 700;
 }
-.calc-header p { color: rgba(255,255,255,0.6); font-size: 0.82rem; margin-top: 2px; }
+.calc-header p { color: rgba(255,255,255,0.78); font-size: 0.82rem; margin-top: 2px; }
 .calc-body { padding: 32px; }
 .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .field { display: flex; flex-direction: column; gap: 6px; }
@@ -291,7 +295,7 @@ section:nth-child(even) { background: var(--white); }
 }
 .section-header .kicker {
   font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.5px; color: var(--teal); margin-bottom: 10px;
+  letter-spacing: 1.5px; color: #087A76; margin-bottom: 10px;
 }
 .section-header h2 {
   font-family: var(--font-display); font-size: clamp(1.6rem, 3.5vw, 2.2rem);
@@ -305,6 +309,10 @@ h3 { font-family: var(--font-display); color: var(--navy); font-weight: 700; fon
 p + p { margin-top: 14px; }
 .content-block { max-width: 780px; margin: 0 auto; }
 .content-block p { color: var(--text-light); }
+.content-block a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(11,136,132,0.4); }
+.content-block a:hover { text-decoration-color: var(--teal-dark); }
+.faq-a-inner a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(11,136,132,0.4); }
+.faq-a-inner a:hover { text-decoration-color: var(--teal-dark); }
 .content-block h2 { margin-top: 42px; }
 .content-block h3 { margin-top: 32px; }
 .content-block strong { color: var(--text); }
@@ -450,16 +458,16 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
 }
 .footer-brand p {
-  color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-top: 12px; line-height: 1.6;
+  color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-top: 12px; line-height: 1.6;
 }
-.footer h4 {
+.footer .footer-heading {
   font-family: var(--font-display); color: var(--white);
   font-size: 0.95rem; font-weight: 700; margin-bottom: 16px;
 }
 .footer-links { list-style: none; }
 .footer-links li { margin-bottom: 8px; }
 .footer-links a {
-  color: rgba(255,255,255,0.55); font-size: 0.85rem; transition: 0.2s;
+  color: rgba(255,255,255,0.72); font-size: 0.85rem; transition: 0.2s;
   text-decoration: none;
 }
 .footer-links a:hover { color: var(--teal-light); text-decoration: none; }
@@ -470,9 +478,9 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   flex-wrap: wrap; gap: 12px;
 }
 .footer-bottom p {
-  color: rgba(255,255,255,0.35); font-size: 0.8rem;
+  color: rgba(255,255,255,0.6); font-size: 0.8rem;
 }
-.footer-bottom a { color: rgba(255,255,255,0.45); font-size: 0.8rem; text-decoration: none; }
+.footer-bottom a { color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; }
 .footer-bottom a:hover { color: var(--teal-light); }
 
 /* ─── RESPONSIVE ─── */
@@ -611,6 +619,8 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   </div>
 </nav>
 
+<main>
+
 <!-- HERO -->
 <header class="hero">
   <h1>Calculadora de Ferias 2026 <em>Descubra Quanto Voce Vai Receber</em></h1>
@@ -646,11 +656,11 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
     <div class="calc-body">
       <div class="calc-grid">
         <div class="field">
-          <label>Salario Bruto Mensal <span class="tip" data-tip="Valor antes de qualquer desconto. Inclua media de horas extras e adicionais habituais.">?</span></label>
+          <label for="salary">Salario Bruto Mensal <span class="tip" data-tip="Valor antes de qualquer desconto. Inclua media de horas extras e adicionais habituais.">?</span></label>
           <input type="text" id="salary" placeholder="R$ 3.500,00" inputmode="decimal" autocomplete="off">
         </div>
         <div class="field">
-          <label>Dias de Ferias <span class="tip" data-tip="Escolha entre 30, 20, 15 dias ou informe um valor personalizado.">?</span></label>
+          <label for="days">Dias de Ferias <span class="tip" data-tip="Escolha entre 30, 20, 15 dias ou informe um valor personalizado.">?</span></label>
           <select id="days">
             <option value="30">30 dias (integral)</option>
             <option value="20">20 dias</option>
@@ -660,11 +670,11 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
           </select>
         </div>
         <div class="field" id="customDaysField" style="display:none;">
-          <label>Quantos dias?</label>
+          <label for="customDays">Quantos dias?</label>
           <input type="number" id="customDays" min="5" max="30" placeholder="Ex: 14">
         </div>
         <div class="field">
-          <label>Dependentes para IRRF <span class="tip" data-tip="Cada dependente deduz R$189,59 da base de calculo do Imposto de Renda.">?</span></label>
+          <label for="dependents">Dependentes para IRRF <span class="tip" data-tip="Cada dependente deduz R$189,59 da base de calculo do Imposto de Renda.">?</span></label>
           <select id="dependents">
             <option value="0">Nenhum</option>
             <option value="1">1 dependente</option>
@@ -1016,6 +1026,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
     Usar a Calculadora
   </a>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -1025,7 +1036,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
       <p>Calculadora de ferias online gratuita com tabelas INSS e IRRF 2026 atualizadas. Ferramenta baseada na CLT, Constituicao Federal e Lei 14.848/2025.</p>
     </div>
     <div>
-      <h4>Ferramentas</h4>
+      <p class="footer-heading">Ferramentas</p>
       <ul class="footer-links">
         <li><a href="/">Calculadora de Ferias</a></li>
         <li><a href="/calculo-ferias-proporcionais/">Ferias Proporcionais</a></li>
@@ -1034,7 +1045,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
       </ul>
     </div>
     <div>
-      <h4>Guias</h4>
+      <p class="footer-heading">Guias</p>
       <ul class="footer-links">
         <li><a href="/como-calcular-um-terco-de-ferias/">1/3 de Ferias</a></li>
         <li><a href="/calculo-ferias-15-dias/">Ferias 15, 20, 10 Dias</a></li>
@@ -1042,7 +1053,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
       </ul>
     </div>
     <div>
-      <h4>Legal</h4>
+      <p class="footer-heading">Legal</p>
       <ul class="footer-links">
         <li><a href="https://www.gov.br/receitafederal" target="_blank" rel="noopener">Receita Federal</a></li>
         <li><a href="https://www.gov.br/trabalho-e-emprego" target="_blank" rel="noopener">Min. do Trabalho</a></li>
