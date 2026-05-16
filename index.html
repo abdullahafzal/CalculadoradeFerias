@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
 <title>Calculadora de Ferias 2026 - Calcule Quanto Voce Vai Receber</title>
 <meta name="description" content="Calculadora de ferias online gratis 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000. Resultado imediato.">
 <meta name="robots" content="index, follow">
@@ -20,9 +21,8 @@
 <meta name="twitter:description" content="Calculadora de ferias online gratis 2026. Calcule ferias CLT com INSS, IRRF, abono pecuniario e isencao de IR ate R$5.000.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&display=swap" rel="stylesheet"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet"></noscript>
 <style>
 :root {
   --navy: #1B2A4A;
@@ -164,7 +164,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
 }
 .calc-header-icon {
   width: 44px; height: 44px; border-radius: 10px;
-  background: var(--teal); display: flex; align-items: center; justify-content: center;
+  background: #097B77; display: flex; align-items: center; justify-content: center;
 }
 .calc-header h2 {
   font-family: var(--font-display); color: var(--white);
@@ -218,7 +218,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
 }
 .check-row:hover { border-color: var(--teal); }
 .check-row input[type="checkbox"] {
-  width: 20px; height: 20px; accent-color: var(--teal); cursor: pointer;
+  width: 20px; height: 20px; accent-color: #097B77; cursor: pointer;
 }
 .check-row span { font-size: 0.92rem; font-weight: 500; color: var(--navy); }
 .calc-btn-wrap { margin-top: 28px; text-align: center; }
@@ -336,7 +336,7 @@ p + p { margin-top: 14px; }
 .step-card:hover { border-color: var(--teal); transform: translateY(-3px); box-shadow: var(--shadow); }
 .step-num {
   width: 44px; height: 44px; border-radius: 50%;
-  background: var(--teal); color: var(--white);
+  background: #097B77; color: var(--white);
   font-family: var(--font-display); font-weight: 800; font-size: 1.1rem;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 18px;
@@ -358,7 +358,7 @@ p + p { margin-top: 14px; }
 .formula-step .num {
   display: inline-flex; align-items: center; justify-content: center;
   width: 28px; height: 28px; border-radius: 50%;
-  background: var(--teal); font-size: 0.8rem; font-weight: 700;
+  background: #097B77; font-size: 0.8rem; font-weight: 700;
   margin-right: 10px;
 }
 .formula-step .math {
@@ -493,7 +493,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
     border-bottom: 3px solid var(--teal);
   }
   .nav-links.open { display: flex; }
-  .nav-links a { padding: 12px 16px; font-size: 0.95rem; }
+  .nav-links a { padding: 14px 16px; font-size: 0.95rem; }
   .hamburger { display: block; }
   .hero { padding: 44px 5% 56px; }
   .hero h1 { font-size: 1.8rem; }
@@ -505,9 +505,13 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   .steps-row { grid-template-columns: 1fr; gap: 16px; }
   .compare-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-links li { margin-bottom: 0; }
+  .footer-links a { display: flex; align-items: center; min-height: 48px; padding: 8px 0; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 16px; }
+  .footer-bottom a { display: inline-flex; align-items: center; min-height: 48px; padding: 8px 0; }
   section { padding: 52px 5%; }
   .formula-box { padding: 20px; }
+  .faq-q { padding: 18px 18px; min-height: 48px; }
 }
 @media (max-width: 480px) {
   .hero-badges { flex-direction: column; align-items: center; }
