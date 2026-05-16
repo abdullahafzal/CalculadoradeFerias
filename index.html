@@ -235,6 +235,253 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
 /* ─── RESULTS ─── */
 .results { display: none; margin-top: 32px; }
 .results.visible { display: block; }
+@media (max-width: 768px) {
+  .nav-links { 
+    display: none; position: fixed; top: 64px; left: 0; right: 0;
+    background: var(--navy-dark); flex-direction: column;
+    padding: 16px 20px; gap: 4px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 16px; font-size: 0.95rem; }
+  .hamburger { display: block; }
+  .hero { padding: 44px 5% 56px; }
+  .hero h1 { font-size: 1.8rem; }
+  .calc-section { margin-top: -30px; }
+  .calc-header { padding: 18px 20px; }
+  .calc-body { padding: 20px; }
+  .calc-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 480px) {
+  .hero-badges { flex-direction: column; align-items: center; }
+  .calc-btn { width: 100%; padding: 16px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de Ferias 2026",
+  "url": "https://calculadoradeferias.com.br/",
+  "description": "Calculadora de ferias online gratuita e atualizada para 2026. Calcula ferias CLT com INSS, IRRF, abono pecuniario, ferias proporcionais e fracionadas.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Calculadora de Ferias"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como calcular ferias de 30 dias com salario de R$3.000?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divida R$3.000 por 3 para obter o adicional de 1/3: R$1.000. Some os dois valores: R$4.000 bruto. Aplique os descontos de INSS e IRRF conforme as tabelas 2026. O valor liquido fica em torno de R$3.480, dependendo do numero de dependentes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O abono pecuniario (venda de ferias) tem desconto de IRRF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nao. O Art. 143 da CLT isenta o abono pecuniario do Imposto de Renda. O INSS incide normalmente, mas o IR nao, o que representa uma vantagem tributaria para trabalhadores acima da faixa de isencao."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Horas extras e comissoes entram no calculo de ferias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, desde que sejam pagas de forma habitual. O Art. 142 da CLT exige que o empregador use a media dos ultimos 12 meses de verbas variaveis como base para o pagamento das ferias."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fracionar as ferias em 3 periodos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, desde a Reforma Trabalhista de 2017. Um periodo deve ter no minimo 14 dias corridos e os outros dois, no minimo 5 dias cada. O fracionamento depende da concordancia do trabalhador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quando as ferias sao pagas em dobro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quando o empregador nao concede ferias dentro do periodo concessivo (12 meses apos o fim do periodo aquisitivo) ou nao paga ate 2 dias antes do inicio. O Art. 137 da CLT garante o pagamento em dobro nesses casos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A calculadora serve para empregada domestica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A ferramenta tem uma opcao especifica para trabalhadores domesticos, que aplica as regras da Lei Complementar 150/2015 no lugar da CLT convencional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Estagiario tem direito a ferias com adicional de 1/3?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nao automaticamente. A Lei 11.788/2008 garante ao estagiario 30 dias de recesso remunerado proporcional, mas sem o adicional constitucional de 1/3, a menos que o contrato de estagio preveja expressamente esse beneficio."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Menu principal">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Calculadora de Ferias - Pagina inicial">Calculadora<span>deFerias</span></a>
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/" class="nav-active">Calculadora</a></li>
+      <li><a href="/calculo-ferias-proporcionais/">Proporcionais</a></li>
+      <li><a href="/como-calcular-um-terco-de-ferias/">1/3 de Ferias</a></li>
+      <li><a href="/calculo-ferias-15-dias/">15, 20, 10 Dias</a></li>
+      <li><a href="/calculo-ferias-rescisao/">Rescisao</a></li>
+      <li><a href="#calculadora" class="nav-cta">Calcular Agora</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>Calculadora de Ferias 2026 <em>Descubra Quanto Voce Vai Receber</em></h1>
+  <p class="hero-sub">Gratuita. Atualizada. Com INSS, IRRF e isencao de IR para salarios ate R$5.000 ja aplicados.</p>
+  <div class="hero-badges">
+    <span class="hero-badge">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+      Tabelas INSS/IRRF 2026
+    </span>
+    <span class="hero-badge">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+      Abono Pecuniario
+    </span>
+    <span class="hero-badge">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+      Lei 14.848/2025
+    </span>
+  </div>
+</header>
+
+<!-- CALCULATOR -->
+<section class="calc-section" id="calculadora">
+  <div class="calc-wrap">
+    <div class="calc-header">
+      <div class="calc-header-icon">
+        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="12" y1="18" x2="16" y2="18"/></svg>
+      </div>
+      <div>
+        <h2>Calculadora de Ferias CLT 2026</h2>
+        <p>Tabelas INSS e IRRF atualizadas &middot; Isencao ate R$5.000</p>
+      </div>
+    </div>
+    <div class="calc-body">
+      <div class="calc-grid">
+        <div class="field">
+          <label for="salary">Salario Bruto Mensal <span class="tip" data-tip="Valor antes de qualquer desconto. Inclua media de horas extras e adicionais habituais.">?</span></label>
+          <input type="text" id="salary" placeholder="R$ 3.500,00" inputmode="decimal" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="days">Dias de Ferias <span class="tip" data-tip="Escolha entre 30, 20, 15 dias ou informe um valor personalizado.">?</span></label>
+          <select id="days">
+            <option value="30">30 dias (integral)</option>
+            <option value="20">20 dias</option>
+            <option value="15">15 dias</option>
+            <option value="10">10 dias</option>
+            <option value="custom">Outro...</option>
+          </select>
+        </div>
+        <div class="field" id="customDaysField" style="display:none;">
+          <label for="customDays">Quantos dias?</label>
+          <input type="number" id="customDays" min="5" max="30" placeholder="Ex: 14">
+        </div>
+        <div class="field">
+          <label for="dependents">Dependentes para IRRF <span class="tip" data-tip="Cada dependente deduz R$189,59 da base de calculo do Imposto de Renda.">?</span></label>
+          <select id="dependents">
+            <option value="0">Nenhum</option>
+            <option value="1">1 dependente</option>
+            <option value="2">2 dependentes</option>
+            <option value="3">3 dependentes</option>
+            <option value="4">4 dependentes</option>
+            <option value="5">5+ dependentes</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label class="check-row">
+            <input type="checkbox" id="sellDays">
+            <span>Vender 10 dias (abono pecuniario)</span>
+          </label>
+        </div>
+        <div class="field full">
+          <label class="check-row">
+            <input type="checkbox" id="advance13">
+            <span>Adiantar 1a parcela do 13o salario</span>
+          </label>
+        </div>
+      </div>
+      <div class="calc-btn-wrap">
+        <button class="calc-btn" id="calcBtn" type="button">Calcular Ferias</button>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="results" id="results">
+        <div class="results-summary">
+          <div class="result-card highlight">
+            <div class="label">Valor Liquido a Receber</div>
+            <div class="value" id="rNet">R$ 0,00</div>
+            <div class="sub" id="rNetSub"></div>
+          </div>
+          <div class="result-card">
+            <div class="label">Total Bruto</div>
+            <div class="value" id="rGross">R$ 0,00</div>
+            <div class="sub" id="rGrossSub"></div>
+          </div>
+          <div class="result-card">
+            <div class="label">Desconto INSS</div>
+            <div class="value" id="rINSS">R$ 0,00</div>
+            <div class="sub" id="rINSSSub"></div>
+          </div>
+          <div class="result-card">
+            <div class="label">Desconto IRRF</div>
+            <div class="value" id="rIRRF">R$ 0,00</div>
+            <div class="sub" id="rIRRFSub"></div>
+          </div>
+        </div>
+
+        <div class="results-breakdown">
+          <div class="breakdown-title open" id="breakdownToggle">
+            <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            <h3>Calculo Passo a Passo com Seus Numeros</h3>
+          </div>
+          <div class="breakdown-body" id="breakdownBody"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
 .results-summary {
   display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
   margin-bottom: 28px;
@@ -486,21 +733,6 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
-  .nav-links { 
-    display: none; position: fixed; top: 64px; left: 0; right: 0;
-    background: var(--navy-dark); flex-direction: column;
-    padding: 16px 20px; gap: 4px;
-    border-bottom: 3px solid var(--teal);
-  }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: 14px 16px; font-size: 0.95rem; }
-  .hamburger { display: block; }
-  .hero { padding: 44px 5% 56px; }
-  .hero h1 { font-size: 1.8rem; }
-  .calc-section { margin-top: -30px; }
-  .calc-header { padding: 18px 20px; }
-  .calc-body { padding: 20px; }
-  .calc-grid { grid-template-columns: 1fr; gap: 16px; }
   .results-summary { grid-template-columns: 1fr; }
   .steps-row { grid-template-columns: 1fr; gap: 16px; }
   .compare-grid { grid-template-columns: 1fr; }
@@ -514,234 +746,9 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   .faq-q { padding: 18px 18px; min-height: 48px; }
 }
 @media (max-width: 480px) {
-  .hero-badges { flex-direction: column; align-items: center; }
-  .calc-btn { width: 100%; padding: 16px; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Calculadora de Ferias 2026",
-  "url": "https://calculadoradeferias.com.br/",
-  "description": "Calculadora de ferias online gratuita e atualizada para 2026. Calcula ferias CLT com INSS, IRRF, abono pecuniario, ferias proporcionais e fracionadas.",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Web",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "BRL"
-  },
-  "creator": {
-    "@type": "Organization",
-    "name": "Calculadora de Ferias"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Como calcular ferias de 30 dias com salario de R$3.000?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Divida R$3.000 por 3 para obter o adicional de 1/3: R$1.000. Some os dois valores: R$4.000 bruto. Aplique os descontos de INSS e IRRF conforme as tabelas 2026. O valor liquido fica em torno de R$3.480, dependendo do numero de dependentes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O abono pecuniario (venda de ferias) tem desconto de IRRF?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nao. O Art. 143 da CLT isenta o abono pecuniario do Imposto de Renda. O INSS incide normalmente, mas o IR nao, o que representa uma vantagem tributaria para trabalhadores acima da faixa de isencao."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Horas extras e comissoes entram no calculo de ferias?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim, desde que sejam pagas de forma habitual. O Art. 142 da CLT exige que o empregador use a media dos ultimos 12 meses de verbas variaveis como base para o pagamento das ferias."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Posso fracionar as ferias em 3 periodos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim, desde a Reforma Trabalhista de 2017. Um periodo deve ter no minimo 14 dias corridos e os outros dois, no minimo 5 dias cada. O fracionamento depende da concordancia do trabalhador."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quando as ferias sao pagas em dobro?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Quando o empregador nao concede ferias dentro do periodo concessivo (12 meses apos o fim do periodo aquisitivo) ou nao paga ate 2 dias antes do inicio. O Art. 137 da CLT garante o pagamento em dobro nesses casos."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A calculadora serve para empregada domestica?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. A ferramenta tem uma opcao especifica para trabalhadores domesticos, que aplica as regras da Lei Complementar 150/2015 no lugar da CLT convencional."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Estagiario tem direito a ferias com adicional de 1/3?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nao automaticamente. A Lei 11.788/2008 garante ao estagiario 30 dias de recesso remunerado proporcional, mas sem o adicional constitucional de 1/3, a menos que o contrato de estagio preveja expressamente esse beneficio."
-      }
-    }
-  ]
-}
-</script>
-</head>
-<body>
-
-<!-- NAV -->
-<nav class="nav" role="navigation" aria-label="Menu principal">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="Calculadora de Ferias - Pagina inicial">Calculadora<span>deFerias</span></a>
-    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="/" class="nav-active">Calculadora</a></li>
-      <li><a href="/calculo-ferias-proporcionais/">Proporcionais</a></li>
-      <li><a href="/como-calcular-um-terco-de-ferias/">1/3 de Ferias</a></li>
-      <li><a href="/calculo-ferias-15-dias/">15, 20, 10 Dias</a></li>
-      <li><a href="/calculo-ferias-rescisao/">Rescisao</a></li>
-      <li><a href="#calculadora" class="nav-cta">Calcular Agora</a></li>
-    </ul>
-  </div>
-</nav>
-
-<main>
-
-<!-- HERO -->
-<header class="hero">
-  <h1>Calculadora de Ferias 2026 <em>Descubra Quanto Voce Vai Receber</em></h1>
-  <p class="hero-sub">Gratuita. Atualizada. Com INSS, IRRF e isencao de IR para salarios ate R$5.000 ja aplicados.</p>
-  <div class="hero-badges">
-    <span class="hero-badge">
-      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-      Tabelas INSS/IRRF 2026
-    </span>
-    <span class="hero-badge">
-      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-      Abono Pecuniario
-    </span>
-    <span class="hero-badge">
-      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-      Lei 14.848/2025
-    </span>
-  </div>
-</header>
-
-<!-- CALCULATOR -->
-<section class="calc-section" id="calculadora">
-  <div class="calc-wrap">
-    <div class="calc-header">
-      <div class="calc-header-icon">
-        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="12" y1="18" x2="16" y2="18"/></svg>
-      </div>
-      <div>
-        <h2>Calculadora de Ferias CLT 2026</h2>
-        <p>Tabelas INSS e IRRF atualizadas &middot; Isencao ate R$5.000</p>
-      </div>
-    </div>
-    <div class="calc-body">
-      <div class="calc-grid">
-        <div class="field">
-          <label for="salary">Salario Bruto Mensal <span class="tip" data-tip="Valor antes de qualquer desconto. Inclua media de horas extras e adicionais habituais.">?</span></label>
-          <input type="text" id="salary" placeholder="R$ 3.500,00" inputmode="decimal" autocomplete="off">
-        </div>
-        <div class="field">
-          <label for="days">Dias de Ferias <span class="tip" data-tip="Escolha entre 30, 20, 15 dias ou informe um valor personalizado.">?</span></label>
-          <select id="days">
-            <option value="30">30 dias (integral)</option>
-            <option value="20">20 dias</option>
-            <option value="15">15 dias</option>
-            <option value="10">10 dias</option>
-            <option value="custom">Outro...</option>
-          </select>
-        </div>
-        <div class="field" id="customDaysField" style="display:none;">
-          <label for="customDays">Quantos dias?</label>
-          <input type="number" id="customDays" min="5" max="30" placeholder="Ex: 14">
-        </div>
-        <div class="field">
-          <label for="dependents">Dependentes para IRRF <span class="tip" data-tip="Cada dependente deduz R$189,59 da base de calculo do Imposto de Renda.">?</span></label>
-          <select id="dependents">
-            <option value="0">Nenhum</option>
-            <option value="1">1 dependente</option>
-            <option value="2">2 dependentes</option>
-            <option value="3">3 dependentes</option>
-            <option value="4">4 dependentes</option>
-            <option value="5">5+ dependentes</option>
-          </select>
-        </div>
-        <div class="field full">
-          <label class="check-row">
-            <input type="checkbox" id="sellDays">
-            <span>Vender 10 dias (abono pecuniario)</span>
-          </label>
-        </div>
-        <div class="field full">
-          <label class="check-row">
-            <input type="checkbox" id="advance13">
-            <span>Adiantar 1a parcela do 13o salario</span>
-          </label>
-        </div>
-      </div>
-      <div class="calc-btn-wrap">
-        <button class="calc-btn" id="calcBtn" type="button">Calcular Ferias</button>
-      </div>
-
-      <!-- RESULTS -->
-      <div class="results" id="results">
-        <div class="results-summary">
-          <div class="result-card highlight">
-            <div class="label">Valor Liquido a Receber</div>
-            <div class="value" id="rNet">R$ 0,00</div>
-            <div class="sub" id="rNetSub"></div>
-          </div>
-          <div class="result-card">
-            <div class="label">Total Bruto</div>
-            <div class="value" id="rGross">R$ 0,00</div>
-            <div class="sub" id="rGrossSub"></div>
-          </div>
-          <div class="result-card">
-            <div class="label">Desconto INSS</div>
-            <div class="value" id="rINSS">R$ 0,00</div>
-            <div class="sub" id="rINSSSub"></div>
-          </div>
-          <div class="result-card">
-            <div class="label">Desconto IRRF</div>
-            <div class="value" id="rIRRF">R$ 0,00</div>
-            <div class="sub" id="rIRRFSub"></div>
-          </div>
-        </div>
-
-        <div class="results-breakdown">
-          <div class="breakdown-title open" id="breakdownToggle">
-            <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-            <h3>Calculo Passo a Passo com Seus Numeros</h3>
-          </div>
-          <div class="breakdown-body" id="breakdownBody"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- O QUE E -->
 <section>
