@@ -37,7 +37,7 @@
   --cream-dark: #F0EDE8;
   --text: #1E1E1E;
   --text-light: #5A5A5A;
-  --text-muted: #706F6F;
+  --text-muted: #666666;
   --border: #E2DED8;
   --white: #FFFFFF;
   --red: #C0392B;
@@ -91,11 +91,11 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
   color: var(--white); background: rgba(255,255,255,0.1); text-decoration: none;
 }
 .nav-cta {
-  background: var(--teal) !important; color: var(--white) !important;
+  background: #097B77 !important; color: var(--white) !important;
   padding: 8px 18px !important; border-radius: 8px !important;
   font-weight: 600 !important;
 }
-.nav-cta:hover { background: var(--teal-dark) !important; }
+.nav-cta:hover { background: var(--navy-light) !important; }
 .hamburger {
   display: none; background: none; border: none; cursor: pointer;
   width: 32px; height: 32px; position: relative;
@@ -135,7 +135,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
   font-style: normal; color: var(--teal-light);
 }
 .hero-sub {
-  color: rgba(255,255,255,0.75); font-size: 1.08rem; max-width: 620px;
+  color: rgba(255,255,255,0.82); font-size: 1.08rem; max-width: 620px;
   margin: 0 auto 10px; line-height: 1.6;
 }
 .hero-badges {
@@ -146,12 +146,12 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
   display: inline-flex; align-items: center; gap: 6px;
   background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
   border-radius: 100px; padding: 6px 16px;
-  color: rgba(255,255,255,0.85); font-size: 0.82rem; font-weight: 500;
+  color: rgba(255,255,255,0.92); font-size: 0.82rem; font-weight: 500;
 }
 .hero-badge svg { flex-shrink: 0; }
 
 /* ─── CALCULATOR ─── */
-.calc-section { padding: 0 5%; margin-top: -40px; position: relative; z-index: 10; }
+.calc-section { padding: 0 5%; margin-top: -40px; position: relative; z-index: 10; content-visibility: visible; contain-intrinsic-size: none; }
 .calc-wrap {
   max-width: 860px; margin: 0 auto;
   background: var(--white); border-radius: 16px;
@@ -182,7 +182,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
 .field label .tip {
   display: inline-flex; align-items: center; justify-content: center;
   width: 16px; height: 16px; border-radius: 50%;
-  background: var(--cream-dark); color: var(--text-muted);
+  background: var(--cream-dark); color: #5A5A5A;
   font-size: 0.65rem; cursor: help; font-weight: 700;
   position: relative;
 }
@@ -201,6 +201,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
   color: var(--text); transition: 0.2s;
   -webkit-appearance: none; appearance: none;
 }
+.field input::placeholder { color: #636363; opacity: 1; }
 .field input:focus, .field select:focus {
   outline: none; border-color: var(--teal); background: var(--white);
   box-shadow: 0 0 0 3px rgba(14,165,160,0.12);
@@ -223,12 +224,12 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
 .calc-btn-wrap { margin-top: 28px; text-align: center; }
 .calc-btn {
   font-family: var(--font-body); font-size: 1.05rem; font-weight: 700;
-  background: var(--teal); color: var(--white);
+  background: #097B77; color: var(--white);
   border: none; border-radius: 12px; padding: 16px 48px;
   cursor: pointer; transition: 0.25s;
   box-shadow: 0 4px 16px rgba(14,165,160,0.3);
 }
-.calc-btn:hover { background: var(--teal-dark); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(14,165,160,0.35); }
+.calc-btn:hover { background: var(--navy); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(27,42,74,0.35); }
 .calc-btn:active { transform: translateY(0); }
 
 /* ─── RESULTS ─── */
@@ -253,7 +254,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
   font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
   color: var(--navy);
 }
-.result-card.highlight .value { color: var(--teal-dark); }
+.result-card.highlight .value { color: #087A76; }
 .result-card .sub { font-size: 0.8rem; color: var(--text-light); margin-top: 4px; }
 
 .results-breakdown {
@@ -288,7 +289,7 @@ a:hover { text-decoration: underline; color: var(--teal-dark); }
 }
 
 /* ─── CONTENT SECTIONS ─── */
-section { padding: 76px 5%; }
+section { padding: 76px 5%; content-visibility: auto; contain-intrinsic-size: auto 600px; }
 section:nth-child(even) { background: var(--white); }
 .section-header {
   text-align: center; max-width: 700px; margin: 0 auto 48px;
@@ -441,7 +442,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   font-family: var(--font-display); color: var(--white);
   font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 12px;
 }
-.cta-strip p { color: rgba(255,255,255,0.7); margin-bottom: 28px; max-width: 540px; margin-left: auto; margin-right: auto; }
+.cta-strip p { color: rgba(255,255,255,0.78); margin-bottom: 28px; max-width: 540px; margin-left: auto; margin-right: auto; }
 .cta-btn {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--gold); color: var(--navy); font-weight: 700;
@@ -743,7 +744,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   <div class="content-block">
     <h2>O Que e a Calculadora de Ferias e Por Que Usar Uma?</h2>
     <div class="content-img">
-      <img src="images/trabalhador-clt-calculando-ferias.webp" alt="Trabalhador CLT conferindo calculo de ferias no computador" width="780" height="585" fetchpriority="high">
+      <img src="images/trabalhador-clt-calculando-ferias.webp" alt="Trabalhador CLT conferindo calculo de ferias no computador" width="780" height="585" loading="lazy" decoding="async">
     </div>
     <p>Todo trabalhador <strong>CLT</strong> tem direito a 30 dias de ferias remuneradas por ano, garantidos pelo <strong>Art. 130 da Consolidacao das Leis do Trabalho</strong>. Mas o valor final que cai na conta nao e so o salario. O empregador soma o <strong>adicional constitucional de 1/3</strong>, aplica os descontos de <strong>INSS</strong> e <strong>IRRF</strong>, e o resultado final surpreende muita gente para mais ou para menos.</p>
     <p>Usar uma <strong>calculadora de ferias</strong> elimina essa surpresa. Voce insere seu salario bruto, escolhe os dias e a ferramenta entrega o valor liquido exato, com cada desconto discriminado. Nenhuma conta manual, nenhuma duvida se o empregador pagou certo.</p>
@@ -784,7 +785,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   <div class="content-block">
     <h2>Como o Calculo de Ferias Funciona: A Formula Exata</h2>
     <div class="content-img">
-      <img src="images/formula-calculo-ferias-passo-a-passo.webp" alt="Ilustracao do passo a passo do calculo de ferias CLT com formula" width="780" height="520" loading="lazy">
+      <img src="images/formula-calculo-ferias-passo-a-passo.webp" alt="Ilustracao do passo a passo do calculo de ferias CLT com formula" width="780" height="520" loading="lazy" decoding="async">
     </div>
     <p>Muita gente recebe as ferias e nao entende de onde veio o numero. A formula tem quatro etapas:</p>
 
@@ -847,7 +848,7 @@ tbody tr:hover { background: rgba(14,165,160,0.04); }
   <div class="content-block">
     <h2>Vale a Pena Vender 10 Dias de Ferias? Compare os Dois Cenarios</h2>
     <div class="content-img">
-      <img src="images/comparacao-venda-ferias-abono-pecuniario.webp" alt="Comparacao visual entre ferias integrais e venda de 10 dias com abono pecuniario" width="780" height="502" loading="lazy">
+      <img src="images/comparacao-venda-ferias-abono-pecuniario.webp" alt="Comparacao visual entre ferias integrais e venda de 10 dias com abono pecuniario" width="780" height="502" loading="lazy" decoding="async">
     </div>
     <p>O <strong>abono pecuniario</strong>, tambem chamado de <strong>venda de ferias</strong>, permite que o trabalhador converta ate 10 dias de descanso em dinheiro. O <strong>Art. 143 da CLT</strong> garante esse direito e o empregador nao pode negar o pedido, desde que o trabalhador solicite com <strong>no minimo 15 dias de antecedencia</strong> antes do fim do <strong>periodo aquisitivo</strong>.</p>
 
