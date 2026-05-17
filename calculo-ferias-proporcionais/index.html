@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Calculo de Ferias Proporcionais 2026 - Formula, Exemplos e Calculadora</title>
+<meta name="description" content="Calcule ferias proporcionais com formula completa, exemplos por salario e calculadora gratis. Saiba quantos avos voce tem direito na rescisao CLT.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calculadoradeferias.com.br/calculo-ferias-proporcionais/">
+<meta property="og:title" content="Calculo de Ferias Proporcionais 2026 - Formula e Calculadora">
+<meta property="og:description" content="Calcule ferias proporcionais com formula completa, exemplos por salario e calculadora gratis. Saiba quantos avos voce tem direito.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://calculadoradeferias.com.br/calculo-ferias-proporcionais/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet"></noscript>
+<style>
+:root {
+  --navy: #1B2A4A;
+  --navy-dark: #111D35;
+  --navy-light: #253B63;
+  --teal: #0EA5A0;
+  --teal-dark: #0B8884;
+  --teal-light: #12C9C3;
+  --gold: #D4A843;
+  --gold-light: #E8C76A;
+  --cream: #FAFAF8;
+  --cream-dark: #F0EDE8;
+  --text: #1E1E1E;
+  --text-light: #5A5A5A;
+  --text-muted: #666666;
+  --border: #E2DED8;
+  --white: #FFFFFF;
+  --red: #C0392B;
+  --green: #1D8348;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --wrap: 1100px;
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(27,42,74,0.08);
+  --shadow-lg: 0 8px 40px rgba(27,42,74,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: #087A76; text-decoration: none; }
+a:hover { text-decoration: underline; color: var(--teal-dark); }
+.wrap { max-width: var(--wrap); margin: 0 auto; }
+
+/* NAV */
+.nav {
+  position: sticky; top: 0; z-index: 1000;
+  background: var(--navy);
+  border-bottom: 3px solid var(--teal);
+  padding: 0 5%;
+}
+.nav-inner {
+  max-width: var(--wrap); margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.15rem;
+  color: var(--white); white-space: nowrap;
+}
+.nav-logo span { color: var(--teal-light); }
+.nav-links { display: flex; align-items: center; gap: 6px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.85); font-size: 0.88rem; font-weight: 500;
+  padding: 6px 12px; border-radius: 6px; transition: 0.2s;
+  text-decoration: none;
+}
+.nav-links a:hover, .nav-links a.nav-active {
+  color: var(--white); background: rgba(255,255,255,0.1); text-decoration: none;
+}
+.nav-cta {
+  background: #097B77 !important; color: var(--white) !important;
+  padding: 8px 18px !important; border-radius: 8px !important;
+  font-weight: 600 !important;
+}
+.nav-cta:hover { background: var(--navy-light) !important; }
+.hamburger {
+  display: none; background: none; border: none; cursor: pointer;
+  width: 32px; height: 32px; position: relative;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px; background: var(--white);
+  position: absolute; left: 5px; transition: 0.3s;
+}
+.hamburger span:nth-child(1) { top: 9px; }
+.hamburger span:nth-child(2) { top: 15px; }
+.hamburger span:nth-child(3) { top: 21px; }
+.hamburger.active span:nth-child(1) { top: 15px; transform: rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { top: 15px; transform: rotate(-45deg); }
+
+/* BREADCRUMB */
+.breadcrumb {
+  padding: 16px 5% 0; background: var(--navy);
+}
+.breadcrumb-inner {
+  max-width: var(--wrap); margin: 0 auto;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.82rem; color: rgba(255,255,255,0.5);
+}
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: var(--white); text-decoration: underline; }
+.breadcrumb-sep { color: rgba(255,255,255,0.3); }
+
+/* PAGE HERO */
+.page-hero {
+  background: var(--navy);
+  background-image: radial-gradient(ellipse at 20% 80%, rgba(14,165,160,0.12) 0%, transparent 60%);
+  padding: 36px 5% 48px;
+  text-align: center;
+  position: relative;
+}
+.page-hero::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--teal), var(--gold), var(--teal));
+}
+.page-hero h1 {
+  font-family: var(--font-display); font-size: clamp(1.7rem, 4vw, 2.4rem);
+  color: var(--white); font-weight: 800; line-height: 1.2;
+  max-width: 750px; margin: 0 auto 14px;
+}
+.page-hero p {
+  color: rgba(255,255,255,0.82); font-size: 1.02rem; max-width: 600px;
+  margin: 0 auto; line-height: 1.6;
+}
+
+/* CALCULATOR */
+.calc-section { padding: 0 5%; margin-top: -32px; position: relative; z-index: 10; }
+.calc-wrap {
+  max-width: 780px; margin: 0 auto;
+  background: var(--white); border-radius: 16px;
+  box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+  overflow: hidden;
+}
+.calc-header {
+  background: var(--navy); padding: 20px 28px;
+  display: flex; align-items: center; gap: 12px;
+}
+.calc-header-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: #097B77; display: flex; align-items: center; justify-content: center;
+}
+.calc-header h2 {
+  font-family: var(--font-display); color: var(--white);
+  font-size: 1.15rem; font-weight: 700;
+}
+.calc-header p { color: rgba(255,255,255,0.78); font-size: 0.8rem; margin-top: 2px; }
+.calc-body { padding: 28px; }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.full { grid-column: 1 / -1; }
+.field label {
+  font-weight: 600; font-size: 0.88rem; color: var(--navy);
+  display: flex; align-items: center; gap: 6px;
+}
+.field label .tip {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--cream-dark); color: #5A5A5A;
+  font-size: 0.65rem; cursor: help; font-weight: 700;
+  position: relative;
+}
+.field label .tip:hover::after {
+  content: attr(data-tip);
+  position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  background: var(--navy); color: var(--white); font-size: 0.75rem; font-weight: 400;
+  padding: 8px 12px; border-radius: 8px; max-width: 260px;
+  white-space: normal; z-index: 50; line-height: 1.4;
+  box-shadow: var(--shadow);
+}
+.field input, .field select {
+  font-family: var(--font-body); font-size: 1rem;
+  padding: 12px 16px; border-radius: 10px;
+  border: 2px solid var(--border); background: var(--cream);
+  color: var(--text); transition: 0.2s;
+  -webkit-appearance: none; appearance: none;
+}
+.field input::placeholder { color: #636363; opacity: 1; }
+.field input:focus, .field select:focus {
+  outline: none; border-color: var(--teal); background: var(--white);
+  box-shadow: 0 0 0 3px rgba(14,165,160,0.12);
+}
+.field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A5A5A' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center;
+  padding-right: 36px; cursor: pointer;
+}
+.calc-btn-wrap { margin-top: 24px; text-align: center; }
+.calc-btn {
+  font-family: var(--font-body); font-size: 1.05rem; font-weight: 700;
+  background: #097B77; color: var(--white);
+  border: none; border-radius: 12px; padding: 15px 44px;
+  cursor: pointer; transition: 0.25s;
+  box-shadow: 0 4px 16px rgba(14,165,160,0.3);
+}
+.calc-btn:hover { background: var(--navy); transform: translateY(-1px); }
+.calc-btn:active { transform: translateY(0); }
+.results { display: none; margin-top: 28px; }
+.results.visible { display: block; }
+.results-summary {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  margin-bottom: 24px;
+}
+.result-card {
+  padding: 18px; border-radius: var(--radius);
+  border: 2px solid var(--border); background: var(--cream);
+}
+.result-card.highlight {
+  border-color: var(--teal); background: linear-gradient(135deg, rgba(14,165,160,0.06), rgba(14,165,160,0.02));
+}
+.result-card .label {
+  font-size: 0.78rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 4px;
+}
+.result-card .value {
+  font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+  color: var(--navy);
+}
+.result-card.highlight .value { color: #087A76; }
+.result-card .sub { font-size: 0.8rem; color: var(--text-light); margin-top: 4px; }
+.results-breakdown {
+  background: var(--cream); border-radius: var(--radius);
+  border: 2px solid var(--border); overflow: hidden;
+}
+.breakdown-title {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 18px; background: var(--navy); cursor: pointer;
+}
+.breakdown-title h3 {
+  font-family: var(--font-display); color: var(--white);
+  font-size: 0.95rem; font-weight: 600;
+}
+.breakdown-title svg { transition: 0.3s; }
+.breakdown-title.open svg { transform: rotate(180deg); }
+.breakdown-body { padding: 18px; }
+.breakdown-body.collapsed { display: none; }
+.step {
+  padding: 12px 0; border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 14px;
+}
+.step:last-child { border-bottom: none; }
+.step-label { font-size: 0.9rem; color: var(--text-light); flex: 1; }
+.step-label strong { color: var(--navy); }
+.step-value { font-weight: 700; font-size: 0.93rem; white-space: nowrap; color: var(--navy); }
+.step-value.neg { color: var(--red); }
+.step-value.pos { color: var(--green); }
+.step-divider { border: none; border-top: 2px dashed var(--border); margin: 4px 0; }
+
+/* CONTENT */
+section { padding: 76px 5%; content-visibility: auto; contain-intrinsic-size: auto 600px; }
+section:nth-child(even) { background: var(--white); }
+.section-header { text-align: center; max-width: 700px; margin: 0 auto 48px; }
+.section-header .kicker {
+  font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #087A76; margin-bottom: 10px;
+}
+.section-header h2 {
+  font-family: var(--font-display); font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--navy); font-weight: 700; line-height: 1.25; margin-bottom: 14px;
+}
+.section-header p { color: var(--text-light); font-size: 1.02rem; line-height: 1.7; }
+h2 { font-family: var(--font-display); color: var(--navy); font-weight: 700; font-size: 1.6rem; margin-bottom: 16px; line-height: 1.3; }
+h3 { font-family: var(--font-display); color: var(--navy); font-weight: 700; font-size: 1.2rem; margin-bottom: 12px; line-height: 1.3; }
+p + p { margin-top: 14px; }
+.content-block { max-width: 780px; margin: 0 auto; }
+.content-block p { color: var(--text-light); }
+.content-block a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(11,136,132,0.4); }
+.content-block a:hover { text-decoration-color: var(--teal-dark); }
+.content-block h2 { margin-top: 42px; }
+.content-block h3 { margin-top: 32px; }
+.content-block strong { color: var(--text); }
+.content-img { margin: 32px 0; border-radius: var(--radius); overflow: hidden; border: 2px solid var(--border); }
+.content-img img { width: 100%; height: auto; display: block; }
+
+/* EXAMPLE BOXES */
+.example-box {
+  background: var(--white); border: 2px solid var(--border); border-radius: var(--radius);
+  padding: 28px; margin: 24px 0;
+}
+.example-box:hover { border-color: var(--teal); }
+.example-box h4 {
+  font-family: var(--font-display); color: var(--navy); font-weight: 700;
+  font-size: 1.02rem; margin-bottom: 16px;
+}
+.example-row {
+  display: flex; justify-content: space-between; padding: 8px 0;
+  border-bottom: 1px solid var(--border); font-size: 0.92rem; color: var(--text-light);
+}
+.example-row:last-child { border-bottom: none; font-weight: 700; color: #087A76; }
+.example-row span:last-child { font-weight: 600; color: var(--navy); }
+.example-row:last-child span:last-child { color: #087A76; }
+
+/* TABLE */
+.table-wrap { overflow-x: auto; margin: 24px 0; border-radius: var(--radius); border: 2px solid var(--border); }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+thead { background: var(--navy); }
+thead th { padding: 14px 18px; text-align: left; color: var(--white); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; }
+tbody td { padding: 13px 18px; border-bottom: 1px solid var(--border); }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--cream); }
+
+/* CHECKLIST */
+.checklist {
+  background: var(--navy); border-radius: var(--radius);
+  padding: 32px; margin: 32px 0; color: var(--white);
+}
+.checklist h3 { color: var(--gold-light); margin-bottom: 20px; }
+.checklist-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.checklist-item:last-child { border-bottom: none; }
+.checklist-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #097B77; font-size: 0.8rem; font-weight: 700;
+  flex-shrink: 0;
+}
+.checklist-text { font-size: 0.95rem; line-height: 1.6; }
+.checklist-text strong { color: var(--white); }
+
+/* FAQ */
+.faq-list { max-width: 780px; margin: 0 auto; }
+.faq-item {
+  border: 2px solid var(--border); border-radius: var(--radius);
+  margin-bottom: 12px; overflow: hidden; background: var(--white);
+}
+.faq-item:hover { border-color: var(--teal); }
+.faq-q {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 22px; cursor: pointer; gap: 16px;
+  font-weight: 600; font-size: 0.95rem; color: var(--navy);
+  background: none; border: none; width: 100%; text-align: left;
+  font-family: var(--font-body);
+}
+.faq-q svg { flex-shrink: 0; transition: 0.3s; }
+.faq-q[aria-expanded="true"] svg { transform: rotate(180deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.faq-a-inner {
+  padding: 0 22px 18px; font-size: 0.92rem;
+  color: var(--text-light); line-height: 1.7;
+}
+.faq-a-inner a { color: #087A76; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(11,136,132,0.4); }
+
+/* CTA STRIP */
+.cta-strip {
+  background: var(--navy);
+  background-image: radial-gradient(ellipse at 30% 50%, rgba(14,165,160,0.12) 0%, transparent 60%);
+  padding: 64px 5%; text-align: center;
+}
+.cta-strip h2 { font-family: var(--font-display); color: var(--white); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 12px; }
+.cta-strip p { color: rgba(255,255,255,0.78); margin-bottom: 28px; max-width: 540px; margin-left: auto; margin-right: auto; }
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--gold); color: var(--navy); font-weight: 700;
+  font-size: 1.05rem; padding: 16px 36px; border-radius: 12px;
+  text-decoration: none; transition: 0.25s;
+  box-shadow: 0 4px 16px rgba(212,168,67,0.3);
+}
+.cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); text-decoration: none; }
+
+/* FOOTER */
+.footer { background: var(--navy-dark); padding: 64px 5% 32px; }
+.footer-grid {
+  max-width: var(--wrap); margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+}
+.footer-brand p { color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-top: 12px; line-height: 1.6; }
+.footer .footer-heading { font-family: var(--font-display); color: var(--white); font-size: 0.95rem; font-weight: 700; margin-bottom: 16px; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 8px; }
+.footer-links a { color: rgba(255,255,255,0.72); font-size: 0.85rem; transition: 0.2s; text-decoration: none; }
+.footer-links a:hover { color: var(--teal-light); text-decoration: none; }
+.footer-bottom {
+  max-width: var(--wrap); margin: 40px auto 0;
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-bottom p { color: rgba(255,255,255,0.6); font-size: 0.8rem; }
+.footer-bottom a { color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; }
+.footer-bottom a:hover { color: var(--teal-light); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; position: fixed; top: 64px; left: 0; right: 0;
+    background: var(--navy-dark); flex-direction: column;
+    padding: 16px 20px; gap: 4px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px 16px; font-size: 0.95rem; }
+  .hamburger { display: block; }
+  .page-hero { padding: 28px 5% 40px; }
+  .page-hero h1 { font-size: 1.6rem; }
+  .calc-section { margin-top: -24px; }
+  .calc-header { padding: 16px 18px; }
+  .calc-body { padding: 18px; }
+  .calc-grid { grid-template-columns: 1fr; gap: 14px; }
+  .results-summary { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-links li { margin-bottom: 0; }
+  .footer-links a { display: flex; align-items: center; min-height: 48px; padding: 8px 0; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 16px; }
+  .footer-bottom a { display: inline-flex; align-items: center; min-height: 48px; padding: 8px 0; }
+  section { padding: 52px 5%; }
+  .checklist { padding: 20px; }
+  .faq-q { padding: 18px 18px; min-height: 48px; }
+}
+@media (max-width: 480px) {
+  .calc-btn { width: 100%; padding: 15px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Calculo de Ferias Proporcionais: Guia Completo com Exemplos e Calculadora",
+  "description": "Calcule ferias proporcionais com formula completa, exemplos por salario e calculadora gratis. Saiba quantos avos voce tem direito na rescisao CLT.",
+  "url": "https://calculadoradeferias.com.br/calculo-ferias-proporcionais/",
+  "datePublished": "2026-05-16",
+  "dateModified": "2026-05-16",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Calculadora de Ferias"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Calculadora de Ferias", "item": "https://calculadoradeferias.com.br/" },
+    { "@type": "ListItem", "position": 2, "name": "Ferias Proporcionais", "item": "https://calculadoradeferias.com.br/calculo-ferias-proporcionais/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "As ferias proporcionais sofrem desconto de Imposto de Renda?", "acceptedAnswer": { "@type": "Answer", "text": "Quando pagas na rescisao, as ferias proporcionais sao verba indenizatoria e estao isentas de IRRF, conforme o Art. 6, V da Lei 7.713/1988." }},
+    { "@type": "Question", "name": "14 dias trabalhados no mes contam como avo?", "acceptedAnswer": { "@type": "Answer", "text": "Nao. O minimo para que uma fracao de mes conte como avo completo e 15 dias trabalhados, conforme o Art. 130 da CLT." }},
+    { "@type": "Question", "name": "Quem pede demissao recebe ferias proporcionais?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, sempre. O Art. 147 da CLT garante esse direito. O que muda e que nao recebe multa de 40% do FGTS nem seguro-desemprego." }},
+    { "@type": "Question", "name": "Trabalhei 11 meses e 20 dias, recebo ferias integrais?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Como a fracao de 20 dias supera os 15 dias minimos, ela conta como o 12o avo. Voce recebe o equivalente a 30 dias." }},
+    { "@type": "Question", "name": "Comissoes e horas extras entram na base de calculo?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Comissoes entram pela media dos ultimos 12 meses (Art. 142 CLT). Horas extras habituais tambem integram a base (Sumula 115 TST)." }},
+    { "@type": "Question", "name": "Qual o prazo para o empregador pagar as verbas rescisorias?", "acceptedAnswer": { "@type": "Answer", "text": "10 dias corridos apos o termino do contrato. O descumprimento gera multa de um salario bruto, conforme o Art. 477, paragrafo 8 da CLT." }}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Menu principal">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Calculadora de Ferias - Pagina inicial">Calculadora<span>deFerias</span></a>
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Calculadora</a></li>
+      <li><a href="/calculo-ferias-proporcionais/" class="nav-active">Proporcionais</a></li>
+      <li><a href="/como-calcular-um-terco-de-ferias/">1/3 de Ferias</a></li>
+      <li><a href="/calculo-ferias-15-dias/">15, 20, 10 Dias</a></li>
+      <li><a href="/calculo-ferias-rescisao/">Rescisao</a></li>
+      <li><a href="/#calculadora" class="nav-cta">Calcular Agora</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Inicio</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>Ferias Proporcionais</span>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <h1>Calculo de Ferias Proporcionais 2026</h1>
+  <p>Formula completa com exemplos, calculadora gratis e tudo sobre avos, rescisao e terco constitucional nas ferias proporcionais CLT.</p>
+</header>
+
+<!-- CALCULATOR -->
+<section class="calc-section" id="calculadora" style="content-visibility:visible;contain-intrinsic-size:none;">
+  <div class="calc-wrap">
+    <div class="calc-header">
+      <div class="calc-header-icon">
+        <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="14" x2="14" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="12" y1="18" x2="16" y2="18"/></svg>
+      </div>
+      <div>
+        <h2>Calculadora de Ferias Proporcionais</h2>
+        <p>Insira seus dados e veja o resultado com terco constitucional</p>
+      </div>
+    </div>
+    <div class="calc-body">
+      <div class="calc-grid">
+        <div class="field">
+          <label for="salary">Salario Bruto Mensal <span class="tip" data-tip="Valor bruto antes dos descontos. Para comissionados, use a media dos ultimos 12 meses.">?</span></label>
+          <input type="text" id="salary" placeholder="R$ 3.500,00" inputmode="decimal" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="months">Meses Trabalhados <span class="tip" data-tip="Meses completos no periodo aquisitivo atual. Fracao acima de 15 dias conta como 1 avo.">?</span></label>
+          <select id="months">
+            <option value="1">1 mes</option>
+            <option value="2">2 meses</option>
+            <option value="3">3 meses</option>
+            <option value="4">4 meses</option>
+            <option value="5" selected>5 meses</option>
+            <option value="6">6 meses</option>
+            <option value="7">7 meses</option>
+            <option value="8">8 meses</option>
+            <option value="9">9 meses</option>
+            <option value="10">10 meses</option>
+            <option value="11">11 meses</option>
+            <option value="12">12 meses</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="absences">Faltas Injustificadas <span class="tip" data-tip="Faltas sem justificativa no periodo aquisitivo. Acima de 5 faltas reduz os dias de ferias (Art. 130 CLT).">?</span></label>
+          <select id="absences">
+            <option value="0" selected>Nenhuma (0-5)</option>
+            <option value="6">6 a 14 faltas (24 dias)</option>
+            <option value="15">15 a 23 faltas (18 dias)</option>
+            <option value="24">24 a 32 faltas (12 dias)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="dependents">Dependentes IRRF <span class="tip" data-tip="Ferias proporcionais na rescisao sao isentas de IRRF. Esse campo importa apenas para ferias gozadas.">?</span></label>
+          <select id="dependents">
+            <option value="0">Nenhum</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-btn-wrap">
+        <button class="calc-btn" id="calcBtn" type="button">Calcular Ferias Proporcionais</button>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="results" id="results">
+        <div class="results-summary">
+          <div class="result-card highlight">
+            <div class="label">Valor Liquido Estimado</div>
+            <div class="value" id="rNet">R$ 0,00</div>
+            <div class="sub" id="rNetSub"></div>
+          </div>
+          <div class="result-card">
+            <div class="label">Total Bruto (com 1/3)</div>
+            <div class="value" id="rGross">R$ 0,00</div>
+            <div class="sub" id="rGrossSub"></div>
+          </div>
+          <div class="result-card">
+            <div class="label">Desconto INSS</div>
+            <div class="value" id="rINSS">R$ 0,00</div>
+            <div class="sub" id="rINSSSub"></div>
+          </div>
+          <div class="result-card">
+            <div class="label">IRRF</div>
+            <div class="value" id="rIRRF">R$ 0,00</div>
+            <div class="sub" id="rIRRFSub"></div>
+          </div>
+        </div>
+        <div class="results-breakdown">
+          <div class="breakdown-title open" id="breakdownToggle">
+            <svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            <h3>Detalhamento Passo a Passo</h3>
+          </div>
+          <div class="breakdown-body" id="breakdownBody"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section>
+  <div class="content-block">
+    <h2>O Que Sao Ferias Proporcionais e Quando Se Aplicam</h2>
+    <div class="content-img">
+      <img src="images/ferias-proporcionais-calculo-avos.webp" alt="Ilustracao do calculo de ferias proporcionais mostrando avos e periodo aquisitivo" width="780" height="520" loading="lazy" decoding="async">
+    </div>
+    <p><strong>Ferias proporcionais</strong> sao a remuneracao das ferias que o trabalhador acumulou dentro de um <strong>periodo aquisitivo</strong> ainda nao completado. O periodo aquisitivo comeca na data de admissao e dura 12 meses. Cada mes trabalhado dentro desse ciclo gera 1 <strong>avo</strong> de direito a ferias. No encerramento do contrato, o trabalhador recebe o valor proporcional aos avos que acumulou, mesmo que o ciclo de 12 meses nao tenha sido concluido.</p>
+    <p>Tres conceitos diferentes que muita gente confunde: <strong>ferias proporcionais</strong> correspondem ao ciclo aquisitivo em andamento no momento da rescisao. <strong>Ferias vencidas</strong> sao ferias de um periodo aquisitivo ja completado que o empregador nao concedeu dentro do periodo concessivo de 12 meses seguintes. <strong>Ferias integrais</strong> representam 30 dias completos, quando o trabalhador concluiu o ciclo e nao teve faltas injustificadas suficientes para reduzir esse periodo. Esses tres itens aparecem em linhas separadas no <strong>TRCT</strong>.</p>
+    <p>O direito as ferias proporcionais existe nas seguintes situacoes: demissao sem justa causa, pedido de demissao, termino de contrato por prazo determinado, <strong>rescisao indireta</strong> e <strong>culpa reciproca</strong>. O unico caso em que o trabalhador perde esse direito e a <a href="/calculo-ferias-rescisao/">demissao por justa causa</a>, conforme o <strong>Art. 482 da CLT</strong>.</p>
+
+    <h2>A Formula Passo a Passo</h2>
+    <h3>Avos, 2,5 dias e o terco constitucional</h3>
+    <p>Cada mes trabalhado equivale a 1 avo, e cada avo representa 2,5 dias de ferias. A formula completa:</p>
+
+    <div class="checklist">
+      <h3>Formula das Ferias Proporcionais</h3>
+      <div class="checklist-item">
+        <span class="checklist-num">1</span>
+        <div class="checklist-text"><strong>Valor diario:</strong> divida o salario bruto por 30.</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">2</span>
+        <div class="checklist-text"><strong>Ferias brutas:</strong> multiplique o valor diario por 2,5 e depois pelo numero de avos (meses trabalhados no periodo aquisitivo em curso).</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">3</span>
+        <div class="checklist-text"><strong>Terco constitucional:</strong> multiplique o resultado do Passo 2 por 1,3333. Esse acrescimo de <a href="/como-calcular-um-terco-de-ferias/" style="color:var(--gold-light)">um terco</a> e garantido pelo Art. 7, inciso XVII da Constituicao Federal.</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">4</span>
+        <div class="checklist-text"><strong>Regra dos 15 dias:</strong> uma fracao de mes so conta como avo completo se o trabalhador tiver trabalhado pelo menos 15 dias naquele mes.</div>
+      </div>
+    </div>
+
+    <h3>Exemplos com Valores Reais</h3>
+
+    <div class="example-box">
+      <h4>Exemplo 1: Salario R$ 1.412,00 | 5 meses trabalhados</h4>
+      <div class="example-row"><span>Valor diario (R$1.412 / 30)</span><span>R$ 47,07</span></div>
+      <div class="example-row"><span>Ferias brutas (R$47,07 x 2,5 x 5)</span><span>R$ 588,33</span></div>
+      <div class="example-row"><span>Com terco constitucional (x 1,3333)</span><span>R$ 784,44</span></div>
+    </div>
+
+    <div class="example-box">
+      <h4>Exemplo 2: Salario R$ 2.500,00 | 8 meses trabalhados</h4>
+      <div class="example-row"><span>Valor diario (R$2.500 / 30)</span><span>R$ 83,33</span></div>
+      <div class="example-row"><span>Ferias brutas (R$83,33 x 2,5 x 8)</span><span>R$ 1.666,67</span></div>
+      <div class="example-row"><span>Com terco constitucional (x 1,3333)</span><span>R$ 2.222,22</span></div>
+    </div>
+
+    <div class="example-box">
+      <h4>Exemplo 3: Salario R$ 5.000,00 | 10 meses trabalhados</h4>
+      <div class="example-row"><span>Valor diario (R$5.000 / 30)</span><span>R$ 166,67</span></div>
+      <div class="example-row"><span>Ferias brutas (R$166,67 x 2,5 x 10)</span><span>R$ 4.166,67</span></div>
+      <div class="example-row"><span>Com terco constitucional (x 1,3333)</span><span>R$ 5.555,56</span></div>
+    </div>
+
+    <p>Esses valores sao brutos. O desconto do <strong>INSS</strong> incide sobre eles. O <strong>IRRF</strong> depende do tipo de rescisao. Veja a secao de descontos abaixo.</p>
+
+    <h3>Faltas Injustificadas Reduzem Seus Dias</h3>
+    <p>O <strong>Art. 130 da CLT</strong> estabelece que o numero de dias de ferias diminui conforme as faltas injustificadas no periodo aquisitivo:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Faltas injustificadas</th><th>Dias de ferias</th></tr></thead>
+        <tbody>
+          <tr><td>0 a 5 faltas</td><td>30 dias</td></tr>
+          <tr><td>6 a 14 faltas</td><td>24 dias</td></tr>
+          <tr><td>15 a 23 faltas</td><td>18 dias</td></tr>
+          <tr><td>24 a 32 faltas</td><td>12 dias</td></tr>
+          <tr><td>Acima de 32 faltas</td><td>Perde o direito</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Com 10 faltas injustificadas, por exemplo, o calculo parte de 24 dias, nao de 30. O valor diario continua sendo o salario bruto dividido por 30, mas o total de dias muda.</p>
+
+    <h2>Ferias Proporcionais na Rescisao por Tipo de Saida</h2>
+
+    <h3>Demissao sem justa causa</h3>
+    <p>O trabalhador recebe as <strong>ferias proporcionais</strong> acrescidas do <a href="/como-calcular-um-terco-de-ferias/">terco constitucional</a>, mais as ferias vencidas se houver ciclo anterior nao gozado. O <strong>aviso previo indenizado</strong> projeta os dias para frente e conta como tempo de servico, adicionando ate 1 avo extra. Um trabalhador com 8 meses de casa e aviso previo indenizado de 30 dias alcanca 9 avos.</p>
+    <p>Trabalhadores com mais de um ano tem direito ao <strong>aviso previo proporcional</strong>: 30 dias mais 3 dias por ano de servico completo, limitado a 90 dias no total. Isso pode representar ate 3 avos extras nas ferias proporcionais.</p>
+
+    <h3>Pedido de demissao: voce nao perde as ferias proporcionais</h3>
+    <p>Existe um mito difundido de que quem pede demissao perde as ferias proporcionais. Isso esta errado. O <strong>Art. 147 da CLT</strong> garante o direito para quem pede demissao, desde que tenha cumprido mais de 12 meses. Para quem tem menos de 12 meses, o <strong>Art. 146</strong> tambem assegura o pagamento proporcional.</p>
+    <p>O que muda: quem pede demissao nao recebe a multa de 40% sobre o FGTS nem seguro-desemprego. Mas as ferias proporcionais com terco constitucional permanecem intactas.</p>
+
+    <h3>Demissao por justa causa: o unico caso em que voce perde</h3>
+    <p>A demissao por <strong>justa causa</strong>, prevista no <strong>Art. 482 da CLT</strong>, e o unico cenario em que o trabalhador perde o direito as ferias proporcionais. Se voce foi demitido por justa causa mas o empregador tambem cometeu irregularidades, pode ser cabivel a <strong>rescisao indireta</strong> pelo Art. 483, recuperando todos os direitos. Na <strong>culpa reciproca</strong>, o trabalhador recebe 50% das verbas.</p>
+
+    <h2>Descontos: INSS e IRRF Sobre Ferias Proporcionais</h2>
+
+    <h3>INSS</h3>
+    <p>O INSS incide sobre as ferias proporcionais inclusive quando pagas na <a href="/calculo-ferias-rescisao/">rescisao</a>. A base e o valor bruto das ferias com o terco incluido. As aliquotas de 2026 seguem a tabela progressiva: 7,5% ate R$1.518; 9% ate R$2.793,88; 12% ate R$4.190,83; 14% ate R$8.157,41.</p>
+
+    <h3>IRRF: distincao que a maioria ignora</h3>
+    <p>As <strong>ferias proporcionais pagas na rescisao</strong> sao verba indenizatoria e estao <strong>isentas de IRRF</strong>, conforme o Art. 6, inciso V da Lei 7.713/1988 e jurisprudencia consolidada do STJ. As ferias gozadas durante o contrato ativo sofrem desconto de IRRF normalmente, porque nao tem carater indenizatorio.</p>
+
+    <h2>Situacoes Especiais</h2>
+
+    <h3>Empregado domestico</h3>
+    <p>O <a href="/ferias-empregada-domestica/">empregado domestico</a> tem os mesmos direitos as ferias proporcionais desde a <strong>EC 72/2013</strong> e a <strong>LC 150/2015</strong>. O calculo segue a mesma formula: avos, 2,5 dias por mes, terco constitucional.</p>
+
+    <h3>Estagiario: recesso proporcional, nao ferias CLT</h3>
+    <p>O estagiario tem direito ao recesso remunerado pela <strong>Lei 11.788/2008</strong>. A proporcao e a mesma (2,5 dias por mes), mas nao ha terco constitucional obrigatorio, nao incide IRRF e o vinculo nao gera FGTS.</p>
+
+    <h3>Contrato de experiencia e prazo determinado</h3>
+    <p>Ao termino do contrato, o trabalhador recebe ferias proporcionais normalmente. Se encerrado antes do prazo pelo empregador, recebe tambem a indenizacao do <strong>Art. 479 da CLT</strong>.</p>
+
+    <h3>Comissionados e salario variavel</h3>
+    <p>Trabalhadores com salario variavel usam a <strong>media dos 12 meses anteriores</strong> como base, conforme o <strong>Art. 142 da CLT</strong>. Se sua empresa calculou ferias apenas sobre o salario fixo e voce recebe comissao, o calculo esta errado.</p>
+
+    <h2>Como Verificar Seu TRCT</h2>
+    <div class="content-img">
+      <img src="images/verificar-trct-ferias-proporcionais.webp" alt="Trabalhador verificando documento TRCT com calculo de ferias proporcionais" width="780" height="520" loading="lazy" decoding="async">
+    </div>
+    <div class="checklist">
+      <h3>5 Passos Para Conferir Antes de Assinar</h3>
+      <div class="checklist-item">
+        <span class="checklist-num">1</span>
+        <div class="checklist-text">Pegue seu TRCT e localize a linha de "ferias proporcionais" e "1/3 de ferias proporcionais".</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">2</span>
+        <div class="checklist-text">Conte os meses completos trabalhados no periodo aquisitivo atual. Verifique se o <strong>aviso previo indenizado</strong> foi projetado.</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">3</span>
+        <div class="checklist-text">Calcule: (salario bruto / 30) x 2,5 x numero de avos x 1,3333.</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">4</span>
+        <div class="checklist-text">Compare com o TRCT. Erros mais comuns: (1) nao aplicar o terco, (2) usar salario liquido como base, (3) nao contar aviso previo como avo.</div>
+      </div>
+      <div class="checklist-item">
+        <span class="checklist-num">5</span>
+        <div class="checklist-text">Se houver divergencia: leve ao DP por escrito. Sem correcao, registre denuncia no portal do <strong>Ministerio do Trabalho</strong> ou acesse a Justica do Trabalho. Prazo: 2 anos apos a rescisao.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="section-header">
+    <div class="kicker">Tire Suas Duvidas</div>
+    <h2>Perguntas Frequentes Sobre Ferias Proporcionais</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq1">As ferias proporcionais sofrem desconto de Imposto de Renda?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq1"><div class="faq-a-inner">Quando pagas na rescisao, sao verba indenizatoria e estao <strong>isentas de IRRF</strong>, conforme o Art. 6, V da Lei 7.713/1988. Se o empregador aplicar desconto de IR sobre essa verba na rescisao, o calculo esta incorreto e voce pode contestar.</div></div></div>
+
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq2">14 dias trabalhados no mes contam como avo?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq2"><div class="faq-a-inner">Nao. O minimo para que uma fracao de mes conte como avo completo e <strong>15 dias trabalhados</strong>, conforme o Art. 130 da CLT. Com 14 dias ou menos, aquele mes nao entra na contagem.</div></div></div>
+
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq3">Trabalhei 11 meses e 20 dias, recebo ferias integrais?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq3"><div class="faq-a-inner">Sim. Como a fracao de 20 dias supera os 15 dias minimos, ela conta como o 12o avo. Voce recebe o equivalente a 30 dias mesmo sem ter completado exatamente 12 meses.</div></div></div>
+
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq4">Quem pede demissao recebe ferias proporcionais?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq4"><div class="faq-a-inner">Sim, sempre. O <strong>Art. 147 da CLT</strong> garante esse direito. O que muda e que nao recebe multa de 40% do FGTS nem seguro-desemprego, mas as ferias proporcionais com <a href="/como-calcular-um-terco-de-ferias/">terco constitucional</a> sao devidas.</div></div></div>
+
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq5">Comissoes e horas extras entram na base de calculo?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq5"><div class="faq-a-inner">Comissoes entram pela media dos ultimos 12 meses, conforme o <strong>Art. 142 da CLT</strong>. Horas extras habituais tambem integram a base, conforme a Sumula 115 do TST. Pagamentos esporadicos nao entram.</div></div></div>
+
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq6">Qual o prazo para o empregador pagar as verbas rescisorias?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq6"><div class="faq-a-inner">10 dias corridos apos o termino do contrato. O descumprimento gera multa de um salario bruto do trabalhador, conforme o <strong>Art. 477, paragrafo 8 da CLT</strong>.</div></div></div>
+
+    <div class="faq-item"><button class="faq-q" aria-expanded="false" aria-controls="fq7">A convencao coletiva pode alterar o calculo?<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a" id="fq7"><div class="faq-a-inner">Pode estabelecer condicoes mais favoraveis ao trabalhador, mas nunca reduzir os direitos minimos garantidos pela CLT e pela Constituicao Federal. Consulte o sindicato da sua categoria.</div></div></div>
+  </div>
+</section>
+
+<!-- CONCLUSAO -->
+<section>
+  <div class="content-block">
+    <h2>Conclusao</h2>
+    <p>O <strong>calculo de ferias proporcionais</strong> segue uma logica direta: meses trabalhados no periodo aquisitivo geram avos, cada avo vale 2,5 dias, e o <a href="/como-calcular-um-terco-de-ferias/">terco constitucional</a> incide sempre. Conhecer essa formula coloca o trabalhador em posicao de verificar o proprio TRCT antes de assinar, e isso pode representar centenas ou milhares de reais a mais no bolso.</p>
+    <p>Situacoes como aviso previo indenizado, faltas injustificadas, salario variavel e tipo de rescisao alteram o resultado final. Use a <a href="/">calculadora de ferias</a> para o seu caso especifico, confira os dados no seu TRCT e, se encontrar divergencia, voce ja tem o argumento tecnico e as referencias legais para questionar. Veja tambem nosso guia sobre <a href="/calculo-ferias-15-dias/">calculo de ferias por periodo</a> para entender ferias fracionadas.</p>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <h2>Calcule Suas Ferias Proporcionais Agora</h2>
+  <p>Insira seu salario e os meses trabalhados para ver o valor exato com terco constitucional.</p>
+  <a href="#calculadora" class="cta-btn">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/></svg>
+    Usar a Calculadora
+  </a>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="nav-logo" style="font-size:1.1rem;">Calculadora<span style="color:var(--teal-light)">deFerias</span></a>
+      <p>Calculadora de ferias online gratuita com tabelas INSS e IRRF 2026 atualizadas. Baseada na CLT, Constituicao Federal e Lei 14.848/2025.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Ferramentas</p>
+      <ul class="footer-links">
+        <li><a href="/">Calculadora de Ferias</a></li>
+        <li><a href="/calculo-ferias-proporcionais/">Ferias Proporcionais</a></li>
+        <li><a href="/calculo-ferias-rescisao/">Ferias na Rescisao</a></li>
+        <li><a href="/calculo-volta-de-ferias/">Volta de Ferias</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Guias</p>
+      <ul class="footer-links">
+        <li><a href="/como-calcular-um-terco-de-ferias/">1/3 de Ferias</a></li>
+        <li><a href="/calculo-ferias-15-dias/">Ferias 15, 20, 10 Dias</a></li>
+        <li><a href="/ferias-empregada-domestica/">Empregada Domestica</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Legal</p>
+      <ul class="footer-links">
+        <li><a href="https://www.gov.br/receitafederal" target="_blank" rel="noopener">Receita Federal</a></li>
+        <li><a href="https://www.gov.br/trabalho-e-emprego" target="_blank" rel="noopener">Min. do Trabalho</a></li>
+        <li><a href="https://esocial.gov.br/" target="_blank" rel="noopener">eSocial</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 CalculadoradeFerias.com.br. Informacoes de carater educativo. Nao substitui consultoria juridica ou contabil.</p>
+    <a href="#">Politica de Privacidade</a>
+  </div>
+</footer>
+
+<script>
+/* NAV */
+(function(){
+  const h=document.querySelector('.hamburger'),n=document.querySelector('.nav-links');
+  h.addEventListener('click',function(){this.classList.toggle('active');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'));});
+  document.addEventListener('click',function(e){if(!e.target.closest('.nav')){h.classList.remove('active');n.classList.remove('open');h.setAttribute('aria-expanded','false');}});
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}h.classList.remove('active');n.classList.remove('open');});});
+})();
+
+/* CALCULATOR */
+(function(){
+  const $=id=>document.getElementById(id);
+  function fc(v){return 'R$ '+v.toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
+  function parseBRL(s){if(!s)return 0;s=s.replace(/[^\d,.]/g,'');if(s.includes(','))s=s.replace(/\./g,'').replace(',','.');return parseFloat(s)||0;}
+  $('salary').addEventListener('input',function(){let v=this.value.replace(/[^\d]/g,'');if(!v){this.value='';return;}v=(parseInt(v)/100).toFixed(2);this.value='R$ '+v.replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.');});
+
+  function calcINSS(base){
+    if(base<=0)return 0;
+    const b=[{l:1518,r:0.075},{l:2793.88,r:0.09},{l:4190.83,r:0.12},{l:8157.41,r:0.14}];
+    let inss=0,prev=0;
+    for(const x of b){if(base<=prev)break;const t=Math.min(base,x.l)-prev;if(t>0)inss+=t*x.r;prev=x.l;}
+    return inss;
+  }
+
+  function addStep(c,label,value,cls){const d=document.createElement('div');d.className='step';d.innerHTML='<div class="step-label">'+label+'</div><div class="step-value '+(cls||'')+'">'+value+'</div>';c.appendChild(d);}
+  function addDivider(c){const hr=document.createElement('hr');hr.className='step-divider';c.appendChild(hr);}
+
+  $('calcBtn').addEventListener('click',function(){
+    const salary=parseBRL($('salary').value);
+    if(salary<=0){alert('Informe o salario bruto.');return;}
+    const months=parseInt($('months').value);
+    const absVal=parseInt($('absences').value);
+    let baseDays=30;
+    if(absVal>=24)baseDays=12;else if(absVal>=15)baseDays=18;else if(absVal>=6)baseDays=24;
+    const daysPerAvo=baseDays/12;
+    const totalDays=daysPerAvo*months;
+    const dailyRate=salary/30;
+    const vacBase=dailyRate*totalDays;
+    const vacThird=vacBase/3;
+    const vacGross=vacBase+vacThird;
+    const inss=calcINSS(vacGross);
+    // Proportional vacation at termination = exempt from IRRF
+    const irrf=0;
+    const net=vacGross-inss;
+
+    $('rNet').textContent=fc(net);
+    $('rNetSub').textContent=months+' avos = '+totalDays.toFixed(1)+' dias';
+    $('rGross').textContent=fc(vacGross);
+    $('rGrossSub').textContent='Ferias proporcionais + 1/3';
+    $('rINSS').textContent=fc(inss);
+    $('rINSSSub').textContent='Tabela progressiva 2026';
+    $('rIRRF').textContent=fc(irrf);
+    $('rIRRFSub').textContent='Isento (verba indenizatoria)';
+
+    const bb=$('breakdownBody');bb.innerHTML='';
+    addStep(bb,'<strong>Salario bruto mensal</strong>',fc(salary));
+    addStep(bb,'Valor diario (salario / 30)',fc(dailyRate));
+    addStep(bb,'Dias base de ferias (com faltas: '+baseDays+' dias)',baseDays+' dias');
+    addStep(bb,'Dias por avo ('+baseDays+' / 12)',daysPerAvo.toFixed(2)+' dias');
+    addDivider(bb);
+    addStep(bb,'<strong>Ferias proporcionais ('+months+' avos x '+daysPerAvo.toFixed(2)+' dias)</strong><br>'+fc(dailyRate)+' x '+totalDays.toFixed(1)+' dias',fc(vacBase));
+    addStep(bb,'Terco constitucional (1/3)',fc(vacThird),'pos');
+    addStep(bb,'<strong>Total bruto com terco</strong>',fc(vacGross));
+    addDivider(bb);
+    addStep(bb,'Desconto INSS (progressivo)','- '+fc(inss),'neg');
+    addStep(bb,'Desconto IRRF','Isento','pos');
+    addDivider(bb);
+    addStep(bb,'<strong>Valor liquido estimado</strong>',fc(net),'pos');
+
+    $('results').classList.add('visible');
+    $('results').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  $('breakdownToggle').addEventListener('click',function(){this.classList.toggle('open');$('breakdownBody').classList.toggle('collapsed');});
+})();
+
+/* FAQ */
+(function(){document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){const ex=this.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('aria-expanded','false');b.nextElementSibling.style.maxHeight=null;});if(!ex){this.setAttribute('aria-expanded','true');const a=this.nextElementSibling;a.style.maxHeight=a.scrollHeight+'px';}});});})();
+</script>
+</body>
+</html>
