@@ -1,9 +1,7 @@
-# Clean URL normalization
-/index.html  /  301
-
-# Trailing slash enforcement for inner pages (uncomment and add per site)
-# /about  /about/  301
-# /services  /services/  301
-# /contact  /contact/  301
-# /faq  /faq/  301
-# /blog  /blog/  301
+# Trailing slash redirects (Cloudflare Pages handles most automatically)
+/calculo-ferias-proporcionais  /calculo-ferias-proporcionais/  301
+/como-calcular-um-terco-de-ferias  /como-calcular-um-terco-de-ferias/  301
+/calculo-ferias-15-dias  /calculo-ferias-15-dias/  301
+/calculo-ferias-rescisao  /calculo-ferias-rescisao/  301
+/calculo-volta-de-ferias  /calculo-volta-de-ferias/  301
+/ferias-empregada-domestica  /ferias-empregada-domestica/  301

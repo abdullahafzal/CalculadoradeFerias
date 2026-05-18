@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://{{DOMAIN}}/</loc>
-    <lastmod>{{DATE}}</lastmod>
+    <loc>https://calculadoradeferias.com.br/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- ADD ONE <url> BLOCK PER INNER PAGE FROM THE APPROVED URL MAP -->
-  <!--
   <url>
-    <loc>https://{{DOMAIN}}/about/</loc>
-    <lastmod>{{DATE}}</lastmod>
+    <loc>https://calculadoradeferias.com.br/calculo-ferias-proporcionais/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://{{DOMAIN}}/services/</loc>
-    <lastmod>{{DATE}}</lastmod>
+    <loc>https://calculadoradeferias.com.br/como-calcular-um-terco-de-ferias/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://{{DOMAIN}}/contact/</loc>
-    <lastmod>{{DATE}}</lastmod>
+    <loc>https://calculadoradeferias.com.br/calculo-ferias-15-dias/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calculadoradeferias.com.br/calculo-ferias-rescisao/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calculadoradeferias.com.br/calculo-volta-de-ferias/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  -->
+  <url>
+    <loc>https://calculadoradeferias.com.br/ferias-empregada-domestica/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
